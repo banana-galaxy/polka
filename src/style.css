@@ -1,3 +1,20 @@
+@font-face {
+    font-family: 'Hero';
+    src: url('fonts/Hero-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+  --bg: #13141B;
+  --salmon: #FF99B6;
+  --perrywinkle: #C485FF;
+}
+
+body {
+  background-color: var(--bg);
+}
+
 html, body, div {
   margin: 0;
   width: 100%;
@@ -6,6 +23,31 @@ html, body, div {
 
 div {
   position: fixed;
+}
+
+span {
+  margin: 0 10px 0 10px;
+  font-family: Hero;
+}
+
+#p {
+  color: var(--perrywinkle);
+}
+
+#o {
+  color: var(--salmon);
+}
+
+#l {
+  color: var(--perrywinkle);
+}
+
+#k {
+  color: var(--salmon);
+}
+
+#a {
+  color: var(--perrywinkle);
 }
 
 button:hover {
@@ -30,7 +72,14 @@ button:hover {
   font-size: 80px;
   border: none;
   border-radius: 100px;
-  background-color: green;
   padding: 40px;
   margin: 30px;
+}
+
+#play {
+  background-color: var(--perrywinkle);
+}
+
+#setting {
+  background-color: var(--salmon);
 }
