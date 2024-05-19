@@ -6,6 +6,7 @@
 
 :root {
   --bg: #13141B;
+  --reset: #33343b;
   --salmon: #FF99B6;
   --perrywinkle: #C485FF;
 }
@@ -131,4 +132,34 @@ button span {
   font-family: Hero;
   transform: translate(-50%, 0);
   color: white;
+}
+
+#current {
+  position: fixed;
+  margin-top: 200px;
+  margin-left: 50%;
+  font-size: 50px;
+  font-family: Hero;
+  transform: translate(-50%, 0);
+  color: grey;
+}
+
+#reset {
+  position: fixed;
+  margin-top: 100px;
+  margin-left: 75%;
+  transform: translate(-50%, 0);
+  width: 150px;
+  height: 150px;
+  border: none;
+  border-radius: 75px;
+  font-size: 100px;
+  font-family: Hero;
+  text-align: center;
+  color: var(--bg);
+  background-color: var(--reset);
+}
+
+#reset:hover {
+  cursor: pointer;
 }
