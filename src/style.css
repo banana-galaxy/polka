@@ -1,8 +1,7 @@
 @font-face {
-    font-family: 'Hero';
-    src: url('fonts/Hero-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Hero';
+  src: url('fonts/Hero-Regular.ttf');
+  font-weight: 100;
 }
 
 :root {
@@ -25,7 +24,7 @@ div {
   position: fixed;
 }
 
-span {
+h1 span {
   margin: 0 10px 0 10px;
   font-family: Hero;
 }
@@ -50,12 +49,8 @@ span {
   color: var(--perrywinkle);
 }
 
-button:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
 
-#menu {
+#menu div{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,23 +58,60 @@ button:hover {
 }
 
 #menu h1 {
-  font-size: 130px;
-  font-weight: bold;
+  position: fixed;
+  font-size: 170px;
+  margin-top: 575px;
+  //margin-bottom: 50px;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
 }
 
 #menu button {
   width: 700px;
   font-size: 80px;
   border: none;
-  border-radius: 100px;
+  border-radius: 50px;
   padding: 40px;
-  margin: 30px;
+  transform: scale(0.75);
+  font-family: Hero;
+}
+
+#menu button:hover {
+  cursor: pointer;
+  transform: scale(0.8);
+}
+
+button#play {
+  margin-bottom: 20px;
+}
+
+button#setting {
+  //margin-top: 30px;
 }
 
 #play {
   background-color: var(--perrywinkle);
+  color: var(--bg);
+  font-weight: bold;
 }
 
 #setting {
   background-color: var(--salmon);
+  color: var(--bg);
+  font-weight: bold;
+}
+
+button span {
+  margin: 0 3px 0 3px;
+}
+
+#game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  width: 900px;
+  height: 900px;
 }
